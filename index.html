@@ -59,21 +59,27 @@
     <ol>
 </body>
 
-</html>
-<!DOCTYPE html>
-<html>
-<style>
-    table,
-    th,
-    td {
-        border: 1px solid black;
-    }
-</style>
 
-<body>
 
-    <h2>Animal Facts</h2>
-    <table style="width:100%">
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,
+        td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+    <h1>Animal Facts</h1>
+    <table style="width:70%">
         <tr>
             <th rowspan="2">Family</th>
             <th rowspan="2">Animal</th>
@@ -84,48 +90,91 @@
             <th>Habitat</th>
             <th>Most Active</th>
         </tr>
-    </table>
-    <tbody>
         <tr>
-            <td rowspan="2">Feline</td>
+            <th rowspan="2">Feline</th>
             <td>Lynx</td>
             <td>Carnivore</td>
             <td>Forest</td>
             <td>Dawn and dusk</td>
         </tr>
         <tr>
-            <td>lion</td>
+            <td>Lion</td>
             <td>Carnivore</td>
-            <td>Savana</td>
+            <td>Savanna</td>
             <td>Night</td>
         </tr>
         <tr>
-            <td rowspan="2">Canine</td>
+            <th rowspan="2">Canine</th>
             <td>Wolf</td>
             <td>Carnivore</td>
             <td>Forest, tundra</td>
             <td>Dawn and dusk</td>
         </tr>
         <tr>
-            <td rowspan="2">Bird</td>
-            <td>parrot</td>
+            <td>Coyote</td>
+            <td>Omnivore</td>
+            <td>Grassland, desert</td>
+            <td>Night</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Bird</th>
+            <td>Parrot</td>
             <td>Seeds, nuts, fruit</td>
             <td>Rainforest</td>
             <td>Day</td>
         </tr>
         <tr>
-            <td>owl</td>
+            <td>Owl</td>
             <td>Carnivore</td>
             <td>Forest</td>
             <td>Night</td>
         </tr>
-    </tbody>
-    <tfoot>
-            <tr>
-                <td colspan="5" align="center">
-                    <i>All animals can be visited every day, 09:00 to 17:00.</i>
-                </td>
-            </tr>
-        </tfoot>
+        <tr>
+            <td colspan="5" text-align="center"><i>All animals can be visited every day, 09:00 to 17:00.</i></td>
+        </tr>
     </table>
-</body>
+
+ 
+
+    <head>
+        <style>
+            fieldset {
+                width: fit-content;
+                border: 1px solid black;
+            }
+        </style>
+    <body>
+        <h1>Plan Your Visit</h1>
+        <form>
+            <label for="fname">First name:</label>
+            <input type="text" id="first name" name="first name" placeholder="e.g. Budi Santoso"><br><br>
+            <label for="lname">Email:</label>
+            <input type="text" id="Email" name="Email" placeholder="you@example.com"><br><br>
+            <label for="birthday">Visit Date:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <label for="tickets">Tickets</label>
+            <input type="number" id="tickets" name="tickets" value="1" min="1"><br><br>
+            <label for="ticket_type">Ticket type</label>
+            <select id="ticket_type" name="ticket_type">
+                <option value="adult">Adult</option>
+                <option value="student">Student</option>
+                <option value="child">Child</option>
+            </select>
+            <fieldset>
+                <legend>Which area do you want to see first?</legend>
+                <input type="radio" id="Feline" name="area" value="Feline">
+                <label for="Feline">Feline</label>
+                <input type="radio" id="Canine" name="area" value="Canine">
+                <label for="Canine">Canine</label>
+                <input type="radio" id="javascript" name="area" value="Bird">
+                <label for="Bird">Bird</label>
+            </fieldset>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="send me news about the zoo">
+            <label for="vehicle1">send me news about the zoo</label><br>
+            <label for="questions">Questions or requests</label>
+            <textarea id="questions" name="questions" rows="4" cols="30"></textarea>
+            <br><br>
+            <input type="submit" value="Books Tickets">
+        </form>
+    </body>
+    </head>
