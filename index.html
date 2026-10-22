@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="header-utama">
     <h1>XYZ Zoo Animal List</h1>
-    <img src="images/zoo.jpg" width="1000">
-
+   </div>
     <ol>
         <Li>
             <h3>Feline</h3>
+            <div class="galeri-container">
             <ul>
-                <li>Lynx<br>
+                <li class="item-galeri">Lynx<br>
                     <a href="images/lynx.jpg" target="_blank"><img src="images/lynx.jpg" width="500" /></a>
                 </li>
-                <li>Lion<br>
+                <li class="item-galeri">Lion<br>
                     <a href="images/lion - コピー.jpg" target="_blank"><img src="images/lion - コピー.jpg" width="500" /></a>
                 </li>
             </ul>
+            </div>
         </li>
         <li>
             <h3>Canine</h3>
@@ -167,10 +169,75 @@
         <li> <a href="https://pixabay.com/id/">pixabay<a></a></li>
     </ol>
 
-        <body>
-            <!-- header -->
-             <div>
-                <href="">project Uniteld</a>
 
-             </div>
-        </body>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Layout Web Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+ </head>  
+<body>
+    <div id="header-utama">
+        <h1>Website Belajar HTML</h1>
+        <p>Panduan Mudah Memahami Div,Class, dan ID</p>
+    </div>
+    <div id="navigasi">
+        <a herf="#" class="menu-link">Beranda</a>
+        <a herf="#" class="menu-link">Artikel</a>
+        <a herf="#" clas="menu-link">Tentang</a>
+        <a herf="#" class="menu-link">Kontak</a>
+    </div>
+    <div class="kontainer-utama">
+        <div class="konten">
+            <h2>Artikel Terbaru</h2>
+            <div class="card-artikel">
+                <h3>Mengenal Tag Div</h3>
+                <p>Tag div berfungsi sebagai wadah generik untuk mengelolah elemen-elemen HTML</p>
+            </div>
+            <div class="card-artikel">
+                <h3>Perbedaan Class dan ID</h3>
+                <p>Class dapat digunakan berulang kali, sedang ID bersifat unik.</p>
+            </div>
+        </div>
+    </div>
+<div class="sidebar">
+    <h3>kategori</h3>
+    <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Desain Web</li>
+    </ul>
+</div>
+<div id="footer-utama">
+    <p>&copy;2026 Belajar Coding Hak Cipta Dilindungi</p>
+</div>
+</body>
+</html> 
+
+<p>Halo, nama saya <span class="nama-penting">Salma</span> dan ini lagi belajar <span class="highlight">HTML</span>.</p>
+
+<!-- Kontainer Utama pembungkus kedua gambar -->
+<div class="galeri-container">
+    
+    <!-- Kotak Gambar Pertama -->
+    <div class="item-galeri">
+        <img src="images/wolf.jpg" alt="Diskon 25%">
+        <p>1. ini nama nya serigala</p>
+    </div>
+
+    <!-- Kotak Gambar Kedua -->
+    <div class="item-galeri">
+        <img src="images/lynx.jpg" alt="Diskon 30%">
+        <p>2. kalau ini saudara nya kucing, agak mirip soalnya</p>
+    </div>
+
+     <!-- Kotak Gambar Ketiga -->
+    <div class="item-galeri">
+        <img src="images/lion - コピー.jpg" alt="Diskon 30%">
+        <p>2. nah ini namanya singa</p>
+    </div>
+
+</div>
