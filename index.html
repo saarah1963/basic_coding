@@ -7,237 +7,158 @@
     <title>Latihan 1</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div id="header-utama">
-    <h1>XYZ Zoo Animal List</h1>
-   </div>
-    <ol>
-        <Li>
-            <h3>Feline</h3>
-            <div class="galeri-container">
-            <ul>
-                <li class="item-galeri">Lynx<br>
-                    <a href="images/lynx.jpg" target="_blank"><img src="images/lynx.jpg" width="500" /></a>
-                </li>
-                <li class="item-galeri">Lion<br>
-                    <a href="images/lion - コピー.jpg" target="_blank"><img src="images/lion - コピー.jpg" width="500" /></a>
-                </li>
-            </ul>
-            </div>
-        </li>
-        <li>
-            <h3>Canine</h3>
-            <ul>
-                <li>Wolf<br>
-                    <a href="images/wolf.jpg" target="_blank"><img src="images/wolf.jpg" width="500"></a>
-                </li>
-
-                <li>Coyote<br>
-                    <a href="images/coyote.jpg" target="_blank"><img src="images/coyote.jpg" width="500"></a>
-                </li>
-            </ul>
-        </li>
-
-        <li>
-            <h3>Bird</h3>
-            <ul>
-                <li>parrot<br>
-                    <a href="images/parrot.jpg" target="_blank"><img src="images/parrot.jpg" width="500"></a>
-                </li>
-
-                <li>owl<br>
-                    <a href="images/owl.jpg" target="_blank"><img src="images/owl.jpg" width="500"></a>
-                </li>
-            </ul>
-        </li>
-    </ol>
-
-</body>
-
-<head>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        th,
-        td {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-    </style>
-</head>
-    <h1>Animal Facts</h1>
-    <table style="width:70%">
-        <tr>
-            <th rowspan="2">Family</th>
-            <th rowspan="2">Animal</th>
-            <th colspan="3">Lifestyle</th>
-        </tr>
-        <tr>
-            <th>Diet</th>
-            <th>Habitat</th>
-            <th>Most Active</th>
-        </tr>
-        <tr>
-            <th rowspan="2">Feline</th>
-            <td>Lynx</td>
-            <td>Carnivore</td>
-            <td>Forest</td>
-            <td>Dawn and dusk</td>
-        </tr>
-        <tr>
-            <td>Lion</td>
-            <td>Carnivore</td>
-            <td>Savanna</td>
-            <td>Night</td>
-        </tr>
-        <tr>
-            <th rowspan="2">Canine</th>
-            <td>Wolf</td>
-            <td>Carnivore</td>
-            <td>Forest, tundra</td>
-            <td>Dawn and dusk</td>
-        </tr>
-        <tr>
-            <td>Coyote</td>
-            <td>Omnivore</td>
-            <td>Grassland, desert</td>
-            <td>Night</td>
-        </tr>
-        <tr>
-            <th rowspan="2">Bird</th>
-            <td>Parrot</td>
-            <td>Seeds, nuts, fruit</td>
-            <td>Rainforest</td>
-            <td>Day</td>
-        </tr>
-        <tr>
-            <td>Owl</td>
-            <td>Carnivore</td>
-            <td>Forest</td>
-            <td>Night</td>
-        </tr>
-        <tr>
-            <td colspan="5" style="text-align: center;">
-                <i>All animals can be visited every day, 09:00 to 17:00.</i></td>
-        </tr>
-    </table>
-
- 
-    <h1>Plan Your Visit</h1>
-        <form>
-            <label for="fname">First name:</label>
-            <input type="text" id="first name" name="first name" placeholder="e.g. Budi Santoso"><br>
-            <label for="lname">Email:</label>
-            <input type="text" id="Email" name="Email" placeholder="you@example.com"><br>
-            <label for="birthday">Visit Date:</label>
-            <input type="date" id="birthday" name="birthday"><br>
-            <label for="tickets">Tickets</label>
-            <input type="number" id="tickets" name="tickets" value="1" min="1"><br>
-            <label for="ticket_type">Ticket type</label>
-            <select id="ticket_type" name="ticket_type">
-                <option value="adult">Adult</option>
-                <option value="student">Student</option>
-                <option value="child">Child</option>
-            </select>
-            <fieldset>
-                <legend>Which area do you want to see first?</legend>
-                <input type="radio" id="Feline" name="area" value="Feline">
-                <label for="Feline">Feline</label>
-                <input type="radio" id="Canine" name="area" value="Canine">
-                <label for="Canine">Canine</label>
-                <input type="radio" id="javascript" name="area" value="Bird">
-                <label for="Bird">Bird</label>
-            </fieldset>
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="send me news about the zoo">
-            <label for="vehicle1">send me news about the zoo</label><br>
-            <label for="questions">Questions or requests</label>
-            <textarea id="questions" name="questions" rows="4" cols="30"></textarea>
-            <br>
-            <input type="submit" value="Books Tickets"><br>
-        </form>
-
-         <h2>Source</h2>
-    <ol>
-        <li> <a href="https://www.pexels.com/id-id/">paxels<a></a></li>
-
-        <li> <a href="https://pixabay.com/id/">pixabay<a></a></li>
-    </ol>
-
-
-
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contoh Layout Web Sederhana</title>
-    <link rel="stylesheet" href="style.css">
- </head>  
-<body>
-    <div id="header-utama">
-        <h1>Website Belajar HTML</h1>
-        <p>Panduan Mudah Memahami Div,Class, dan ID</p>
-    </div>
-    <div id="navigasi">
-        <a herf="#" class="menu-link">Beranda</a>
-        <a herf="#" class="menu-link">Artikel</a>
-        <a herf="#" clas="menu-link">Tentang</a>
-        <a herf="#" class="menu-link">Kontak</a>
-    </div>
-    <div class="kontainer-utama">
-        <div class="konten">
-            <h2>Artikel Terbaru</h2>
-            <div class="card-artikel">
-                <h3>Mengenal Tag Div</h3>
-                <p>Tag div berfungsi sebagai wadah generik untuk mengelolah elemen-elemen HTML</p>
-            </div>
-            <div class="card-artikel">
-                <h3>Perbedaan Class dan ID</h3>
-                <p>Class dapat digunakan berulang kali, sedang ID bersifat unik.</p>
-            </div>
-        </div>
-    </div>
-<div class="sidebar">
-    <h3>kategori</h3>
-    <ul>
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
-        <li>Desain Web</li>
-    </ul>
-</div>
-<div id="footer-utama">
-    <p>&copy;2026 Belajar Coding Hak Cipta Dilindungi</p>
-</div>
-</body>
-</html> 
-
-<p>Halo, nama saya <span class="nama-penting">Salma</span> dan ini lagi belajar <span class="highlight">HTML</span>.</p>
-
-<!-- Kontainer Utama pembungkus kedua gambar -->
-<div class="galeri-container">
     
-    <!-- Kotak Gambar Pertama -->
-    <div class="item-galeri">
-        <img src="images/wolf.jpg" alt="Diskon 25%">
-        <p>1. ini nama nya serigala</p>
-    </div>
+        <div id="header-utama">
+            <h1>XYZ Zoo Animal List</h1>
+        </div>
+    <div class="content">
+        <ol>
+            <Li>
+                <h3>Feline</h3>
+                <div class="galeri-container">
+                    <ul>
+                        <li class="item-galeri">Lynx<br>
+                            <a href="images/lynx.jpg" target="_blank"><img src="images/lynx.jpg" width="500" /></a>
+                        </li>
+                        <li class="item-galeri">Lion<br>
+                            <a href="images/lion - コピー.jpg" target="_blank"><img src="images/lion - コピー.jpg"
+                                    width="500" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <h3>Canine</h3>
+                <div class="galeri-container">
+                    <ul>
+                        <li class="item-galeri">Wolf<br>
+                            <a href="images/wolf.jpg" target="_blank"><img src="images/wolf.jpg" width="500"></a>
+                        </li>
 
-    <!-- Kotak Gambar Kedua -->
-    <div class="item-galeri">
-        <img src="images/lynx.jpg" alt="Diskon 30%">
-        <p>2. kalau ini saudara nya kucing, agak mirip soalnya</p>
-    </div>
+                        <li class="item-galeri">Coyote<br>
+                            <a href="images/coyote.jpg" target="_blank"><img src="images/coyote.jpg" width="500"></a>
+                        </li>
+                    </ul>
+                </div>
 
-     <!-- Kotak Gambar Ketiga -->
-    <div class="item-galeri">
-        <img src="images/lion - コピー.jpg" alt="Diskon 30%">
-        <p>2. nah ini namanya singa</p>
-    </div>
+            </li>
 
-</div>
+            <li>
+                <h3>Bird</h3>
+                <div class="galeri-container">
+                    <ul>
+                        <li class="item-galeri">parrot<br>
+                            <a href="images/parrot.jpg" target="_blank"><img src="images/parrot.jpg" width="500"></a>
+                        </li>
+
+                        <li class="item-galeri">owl<br>
+                            <a href="images/owl.jpg" target="_blank"><img src="images/owl.jpg" width="500"></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+
+            <h1>Animal Facts</h1>
+            <table style="width:70%">
+                <tr>
+                    <th rowspan="2">Family</th>
+                    <th rowspan="2">Animal</th>
+                    <th colspan="3">Lifestyle</th>
+                </tr>
+                <tr>
+                    <th>Diet</th>
+                    <th>Habitat</th>
+                    <th>Most Active</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">Feline</th>
+                    <td>Lynx</td>
+                    <td>Carnivore</td>
+                    <td>Forest</td>
+                    <td>Dawn and dusk</td>
+                </tr>
+                <tr>
+                    <td>Lion</td>
+                    <td>Carnivore</td>
+                    <td>Savanna</td>
+                    <td>Night</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Canine</th>
+                    <td>Wolf</td>
+                    <td>Carnivore</td>
+                    <td>Forest, tundra</td>
+                    <td>Dawn and dusk</td>
+                </tr>
+                <tr>
+                    <td>Coyote</td>
+                    <td>Omnivore</td>
+                    <td>Grassland, desert</td>
+                    <td>Night</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Bird</th>
+                    <td>Parrot</td>
+                    <td>Seeds, nuts, fruit</td>
+                    <td>Rainforest</td>
+                    <td>Day</td>
+                </tr>
+                <tr>
+                    <td>Owl</td>
+                    <td>Carnivore</td>
+                    <td>Forest</td>
+                    <td>Night</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: center;">
+                        <i>All animals can be visited every day, 09:00 to 17:00.</i>
+                    </td>
+                </tr>
+            </table>
+
+            <h1>Plan Your Visit</h1>
+            <form>
+                <label for="fname">First name:</label>
+                <input type="text" id="first name" name="first name" placeholder="e.g. Budi Santoso"><br>
+                <label for="lname">Email:</label>
+                <input type="text" id="Email" name="Email" placeholder="you@example.com"><br>
+                <label for="birthday">Visit Date:</label>
+                <input type="date" id="birthday" name="birthday"><br>
+                <label for="tickets">Tickets</label>
+                <input type="number" id="tickets" name="tickets" value="1" min="1"><br>
+                <label for="ticket_type">Ticket type</label>
+                <select id="ticket_type" name="ticket_type">
+                    <option value="adult">Adult</option>
+                    <option value="student">Student</option>
+                    <option value="child">Child</option>
+                </select>
+                <fieldset>
+                    <legend>Which area do you want to see first?</legend>
+                    <input type="radio" id="Feline" name="area" value="Feline">
+                    <label for="Feline">Feline</label>
+                    <input type="radio" id="Canine" name="area" value="Canine">
+                    <label for="Canine">Canine</label>
+                    <input type="radio" id="javascript" name="area" value="Bird">
+                    <label for="Bird">Bird</label>
+                </fieldset>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="send me news about the zoo">
+                <label for="vehicle1">send me news about the zoo</label><br>
+                <label for="questions">Questions or requests</label>
+                <textarea id="questions" name="questions" rows="4" cols="30"></textarea>
+                <br>
+                <input type="submit" value="Books Tickets"><br>
+            </form>
+
+            <h2>Source</h2>
+            <ol>
+                <li> <a href="https://www.pexels.com/id-id/">paxels<a></a></li>
+
+                <li> <a href="https://pixabay.com/id/">pixabay<a></a></li>
+            </ol>
+    </div>
+    
+</body>
+</html>
