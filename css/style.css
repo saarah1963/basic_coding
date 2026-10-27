@@ -9,34 +9,80 @@ h2 {
     font-family: 'Noto+Sans', cursive;
     color: black;
 }
+.hero-container{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/zoo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#header-utama {
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+}
+#header-utama h1 {
+    font-family: 'Noto+Sans', cursive;
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(239, 238, 238);
+    margin: 0;
+}
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+border-left: 1px solid rgba(255, 255, 255, 0.6);
+}
+.nav-links li:first-child {
+    border-left: none;
+}
+.nav-links a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 15px;
+    display:block;
+    transition: 0,3s;
+}
+.nav-links a:hover {
+    color: #fc0;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #c1ba7f;
+    background-color: #F3EDE1;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
 }
-#header-utama {
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/zoo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    padding: 80px 0;
-    margin: 0; 
-}
-#header-utama h1 {
-    font-family: 'Noto+Sans', cursive;
-    font-size: 35px;
-    color: rgb(239, 238, 238);
-    margin: 0;
-}
+
 .content {
     padding: 30px;
     max-width: 1000px;
@@ -48,10 +94,10 @@ body {
     padding-left: 0;
 }
 .content-group {
-    background-color: rgba(225, 229, 127, 0.938);
+    background-color: #D48B38;
     padding: 25px;
     border-radius: 12px;
-    border: 5px solid white;
+    border: 1px solid rgba(235, 202, 14, 0.938);
     box-sizing: border-box;
 }
 .content-group > h3 {
@@ -85,6 +131,11 @@ body {
     object-fit: cover;
     border-radius: 6px;
     margin-top: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.galeri-container img:hover{
+    transform: scale(1.05);
+    filter: brightness(1.1);
 }
 table {
     width: 100%;
@@ -105,7 +156,7 @@ table {
 }
 .content-group th, 
 .content-group td {
-    border: 1px solid #ddd;
+    border: 1px solid black;
     padding: 12px;
     text-align: left;
     color: #333;
@@ -115,6 +166,9 @@ table, th, td {
 }
 th, td {
     padding: 10px;
+}
+table td :last-child{
+    background-color: #bea672;
 }
 form {
     background-color: #ffffff;
@@ -136,4 +190,38 @@ form textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
+form input[type="submit"]{
+    background-color: #d4641a;
+    padding: 8px 5px;
+}
+.footer-source{
+    background-color: #291B1B;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+.footer-source h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: white;
+}
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+.footer-links a{
+    color: rgb(237, 237, 240);
+    text-decoration: none;
+    font-size: 16px;
+    gap: 8px;
+    transition: color 0.3s;
+}
+.footer-links a:hover {
+    color: #f0ed07;
+    text-decoration: underline;
+}
