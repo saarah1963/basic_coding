@@ -150,7 +150,7 @@ table {
     max-width: 1000px;
     border-collapse: collapse;
     margin-top: 10px;
-    background-color: #ffffff;
+    background-color: #f1c637;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -168,6 +168,9 @@ th, td {
     padding: 10px;
 }
 table td :last-child{
+    background-color: #c64118;
+}
+table th :first-child{
     background-color: #bea672;
 }
 form {
@@ -224,4 +227,7 @@ form input[type="submit"]{
 .footer-links a:hover {
     color: #f0ed07;
     text-decoration: underline;
+}
+.footer-source h2{
+font-size: 30px;
 }
